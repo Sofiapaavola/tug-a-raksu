@@ -1,0 +1,11 @@
+{
+  "name": "tug-a-raksu",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "sass .:."
+  },
+  "repository": "https://github.com/Sofiapaavola/tug-a-raksu.git",
+  "author": "Sofia Paavola <paavola.sofia@gmail.com>",
+  "license": "MIT"
+}

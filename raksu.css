@@ -1,41 +1,41 @@
-
 * {
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box;
-    font-family: 'Mansalva', cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mansalva", cursive;
 }
 
-body  {
-    background-image: url("./img/giphybackground.gif");    
+body {
+  background-image: url("./img/giphybackground.gif");
+}
+body h1, body h2 {
+  text-align: center;
+  margin: 2%;
+  color: white;
 }
 
-h1, h2 {
-    text-align: center;
-    margin: 2%;
-    color: white;
-}
 .game-area {
-    display: flex; 
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-
 .game-area .player-title {
-    color: white;
-    border: 2px dotted #FF3875; 
-    height: 300px;
-    width: 20vw;
-    text-align: center;
+  color: white;
+  border: 2px dotted #FF3875;
+  height: 300px;
+  width: 20vw;
+  text-align: center;
 }
 
 #raksu {
-    height: 50vh;
-    width: 20vw;
-    background-color:black;
-    border-radius: 50%;
-    background-image: url('./img/editedraksucutout.png ');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center top;
-    position: absolute;
-  }
+  height: 50vh;
+  width: 20vw;
+  background-color: black;
+  border-radius: 50%;
+  background-image: url("./img/editedraksucutout.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  position: absolute;
+}
+
+/*# sourceMappingURL=raksu.css.map */
