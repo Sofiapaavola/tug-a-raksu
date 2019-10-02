@@ -7,32 +7,35 @@ document.addEventListener("keyup", event => {
   if (leftDistance === 20 || leftDistance === 60) {
     endGame();
   } else {
-    move(event.keyCode);
+    handleKeyPress(event.keyCode);
   }
 });
 
-const move = keyCode => {
+const handleKeyPress = keyCode => {
   if (keyCode === 32) {
-    square.style.left = --leftDistance + "vw";
-    // if (leftDistance === 30) { 
-    //     square.style.left **= leftDistance + "vw";
-    // }
+    moveTo(--leftDistance);
   } else if (keyCode === 13) {
-    square.style.left = ++leftDistance + "vw";
+    moveTo(++leftDistance);
   }
 };
 
-const scoreIncrement = () => {
+const moveTo = (distance) => square.style.left = distance + "vw";
+
+// break down moves into move right and move left functions 
+
+const incrementScore = () => {
   if (leftDistance === 20) {
     iidaOriginalScore++;
-    document.getElementById("iida-score").innerHTML =
-      "Score: " + iidaOriginalScore;
+    updateScore("iida-score", iidaOriginalScore);
   } else if (leftDistance === 60) {
     sofiaOriginalScore++;
-    document.getElementById("sofia-score").innerHTML =
-      "Score: " + sofiaOriginalScore;
+    updateScore("sofia-score", sofiaOriginalScore);
   }
 };
+
+const updateScore = (id, score) => {
+    document.getElementById(id).innerHTML = "Score: " + score;
+}
 
 const resetGame = () => {
   leftDistance = 40;
@@ -43,11 +46,14 @@ resetGame();
 
 const endGame = () => {
   if (leftDistance === 20) {
-    alert("Iida won Raksu's affection");
-    scoreIncrement();
+    win('Iida');
   } else if (leftDistance === 60) {
-    alert("Sofia won Raksu's affection");
-    scoreIncrement();
+    win('Sofia');
   }
   resetGame();
+};
+
+const win = (name) => {
+    alert(name + " won Raksu's affection");
+    incrementScore(); 
 };
