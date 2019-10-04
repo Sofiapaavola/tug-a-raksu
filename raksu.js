@@ -38,6 +38,7 @@ const updateScore = (id, score) => {
 const resetGame = () => {
   leftDistance = 40;
   square.style.left = leftDistance + "vw";
+  document.getElementById("win").style.backgroundImage = "none";
 };
 
 resetGame(); 
@@ -48,10 +49,12 @@ const endGame = () => {
   } else if (leftDistance === 60) {
     win('Sofia');
   }
-  resetGame();
+  setTimeout(function(){ resetGame(); }, 2000);
 };
 
 const win = (name) => {
     alert(name + " won Raksu's affection");
     incrementScore(); 
+    document.getElementById("win").style.backgroundImage = "url('./img/raksuconfetti.gif')";
 };
+
