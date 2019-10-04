@@ -1,3 +1,7 @@
+// colours
+
+$font-colour: white; 
+
 
 * {
     margin: 0; 
@@ -7,21 +11,22 @@
 }
 
 body  {
-    background-image: url("./img/giphybackground.gif");    
+    background-image: url("./img/giphybackground.gif");  
 
     h1, h2 {
         text-align: center;
         margin: 2%;
-        color: white;
+        color: $font-colour;
     }
 }
 
 .game-area {
     display: flex; 
     justify-content: space-between;
+    margin-top: 5%;
 
     .player-title {
-        color: white;
+        color: $font-colour;
         border: 2px dotted #FF3875; 
         height: 300px;
         width: 20vw;
@@ -37,6 +42,5 @@ body  {
     background-image: url('./img/editedraksucutout.png');
     background-repeat: no-repeat;
     background-size: cover; 
-    background-position: center top;
     position: absolute;
   }

@@ -21,8 +21,6 @@ const handleKeyPress = keyCode => {
 
 const moveTo = (distance) => square.style.left = distance + "vw";
 
-// break down moves into move right and move left functions 
-
 const incrementScore = () => {
   if (leftDistance === 20) {
     iidaOriginalScore++;
