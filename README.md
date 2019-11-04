@@ -1,4 +1,4 @@
-tug-a-raksu
+# tug-a-raksu
 This game was given as the first brief during the _nology course to practice DOM manipulation using Javascript! Created with HTML, CSS, Javascript. A personalised version of tug-of-war. After completing the original brief, I styled it as a game in which my dog is the object of affection and the two players are me, Sofia, and my sister, Iida, as the competition for my dog's affection has been our lifelong quest. 
 
 # Description
