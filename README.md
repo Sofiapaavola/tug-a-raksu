@@ -10,6 +10,8 @@ The game should be responsive and scale with the screen. You can reset the game 
 ## Rules
 You may only use JS / CSS / HTML, no frameworks or libraries. You can use either procedural or object oriented approaches.
 
+## Setup
+No special setup is required for this project. You can see it on git hub pages: https://sofiapaavola.github.io/tug-a-raksu/
 
 
 
